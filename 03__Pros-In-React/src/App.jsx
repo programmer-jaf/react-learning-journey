@@ -14,7 +14,7 @@
 
 import { Expression } from "./components/Expressions";
 import { UserProps } from "./components/Props";
-
+import {DynamicMessage} from "./solutions/DynamicMessage"
 export const App = () => {
   return (
     <div>
@@ -25,6 +25,12 @@ export const App = () => {
       {/* Props */}
       <h2>Props:</h2>
       <UserProps name={"Programmer-Jaf"} email={"programmerjaf@gmail.com"} githubLink={"https://www.github.com/programmer-jaf"}/>
+
+      {/* Challenge--01 */}
+      <hr />
+      <h3>Challenge--01</h3>
+      <DynamicMessage message={"welcome message"}/>
+
     </div>
   );
 };
