@@ -12,19 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { Expression } from "./components/Expressions";
-import { UserProps } from "./components/Props";
-
-export const App = () => {
+export const UserProps = ({name,email,githubLink}) =>{
   return (
     <div>
-      <h1>Props and Expressions </h1>
-      {/* Expression */}
-      <Expression/>
-      <hr />
-      {/* Props */}
-      <h2>Props:</h2>
-      <UserProps name={"Programmer-Jaf"} email={"programmerjaf@gmail.com"} githubLink={"https://www.github.com/programmer-jaf"}/>
+      <p>Data got from Props: {name}</p>
+      <p>Data got from Props: {email}</p>
+      <p>Data got from Props: {githubLink}</p>
     </div>
-  );
-};
+  )
+}
