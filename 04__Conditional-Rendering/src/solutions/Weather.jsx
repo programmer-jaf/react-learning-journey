@@ -12,18 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import {ConditionalRendering} from "./components/ConditionalRendering.jsx";
-import { Weather } from "./solutions/Weather.jsx";
-
-export const App = () => {
-  return (
-    <div>
-      <h1>Learn About Conditional Rendering && Render List</h1>
-      {/* conditional Rendering  */}
-      <ConditionalRendering />
-      {/* Challenge--01 */}
-      <h2>Challenge 01</h2>
-      <Weather temp={23}/>
-    </div>
-  );
+export const Weather = ({ temp }) => {
+  let message;
+  if (temp < 15) {
+    message = "Its Cold Outside";
+  } else if (temp >= 15 && temp <= 25) {
+    message = "It's nice Outside";
+  } else if (temp > 25) {
+    message = "Its Hot Outside";
+  }
+  return <div>{message}</div>;
 };
