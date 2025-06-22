@@ -14,23 +14,34 @@
 
 import { Expression } from "./components/Expressions";
 import { UserProps } from "./components/Props";
-import {DynamicMessage} from "./solutions/DynamicMessage"
+import { DynamicMessage } from "./solutions/DynamicMessage";
 export const App = () => {
   return (
     <div>
       <h1>Props and Expressions </h1>
       {/* Expression */}
-      <Expression/>
+      <Expression />
       <hr />
       {/* Props */}
       <h2>Props:</h2>
-      <UserProps name={"Programmer-Jaf"} email={"programmerjaf@gmail.com"} githubLink={"https://www.github.com/programmer-jaf"}/>
+      <UserProps
+        name={"Programmer-Jaf"}
+        email={"programmerjaf@gmail.com"}
+        githubLink={"https://www.github.com/programmer-jaf"}
+      />
 
       {/* Challenge--01 */}
       <hr />
       <h3>Challenge--01</h3>
-      <DynamicMessage message={"welcome message"}/>
-
+      <DynamicMessage message={"welcome message"} />
+      <hr />
+      <h3>Challenge--02</h3>
+      {/* Challenge--02 */}
+      <ProductInfo
+        name={"Apple Macbook Air 15 Inch"}
+        price={1125}
+        availability={"available"}
+      />
     </div>
   );
 };
