@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import {ConditionalRendering} from "./components/ConditionalRendering.jsx";
+import { UserStats } from "./solutions/UserStats.jsx";
 import { Weather } from "./solutions/Weather.jsx";
 
 export const App = () => {
@@ -24,6 +25,11 @@ export const App = () => {
       {/* Challenge--01 */}
       <h2>Challenge 01</h2>
       <Weather temp={23}/>
+      <hr />
+      {/* Challenge--02 */}
+      <h2>Challenge 02</h2>
+      <UserStats isLoggedIn={true} IsAdmin={true}/>
+      <UserStats isLoggedIn={true} IsAdmin={false}/>
     </div>
   );
 };
