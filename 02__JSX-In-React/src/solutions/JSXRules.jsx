@@ -12,26 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { ConvertedJSX } from "./components/ConvertedJSX";
-import { LearnJSX } from "./components/Learn-JSX";
-import JSXRules from "./solutions/JSXRules";
-import WelcomeMessage from "./solutions/WelcomeMessage";
-
-const App = () => {
+const JSXRules = () => {
   return (
     <div>
-      {/* import Component */}
-      <LearnJSX />
-      <hr />
-      Converted JSX After Rendered
-      <ConvertedJSX />
-      {/* Challenge-01 */}
-      Challenge--01
-      <WelcomeMessage />
-      {/* Challenge-02 */}
-      Challenge--02
-      <JSXRules />
+      <h1>JSX Rules: </h1>
+      <ul>
+        <li>01: JSX only return only one single div in a component</li>
+        <li>02: In JSX, all tags must be close : example: img</li>
+        <li>03: For Styling we can't use class, we have to use ClassName, as well as forms</li>
+      </ul>
     </div>
   );
 };
-export default App;
+
+export default JSXRules;
