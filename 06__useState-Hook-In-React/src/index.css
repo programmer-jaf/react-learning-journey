@@ -46,3 +46,19 @@
   width: 50px;
   cursor: pointer;
 }
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 20px;
+  padding: 1rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #e3c5ff;
+  padding: 2rem ;
+  border-radius: 12px;
+}

@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+import { Lists } from "./components/List"
 import { UseState } from "./hooks/UseState"
 
 
@@ -20,6 +21,9 @@ export const App = () =>{
   return (
     <div>
       <UseState/>
+      <hr />
+      {/* Listing in React */}
+      <Lists/>
     </div>
   )
 }
