@@ -13,6 +13,11 @@
 // limitations under the License.
 
 export const InlineStyle = () => {
+  const headingStyle = {
+    backgroundColor: "yellow",
+    color: "color",
+    fontSize: "25px",
+  };
   return (
     <div>
       <p
@@ -25,6 +30,8 @@ export const InlineStyle = () => {
       >
         Inline Styling
       </p>
+      {/* Variable Style */}
+      <h2 style={headingStyle}>Variable Style</h2>
     </div>
   );
 };
