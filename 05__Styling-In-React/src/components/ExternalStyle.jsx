@@ -12,23 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { ExternalStyle } from "./components/ExternalStyle";
-import { InlineStyle } from "./components/InlineStyle";
+// import the css file
+import "../index.css"
 
-const App = () => {
+export const ExternalStyle = () => {
   return (
-    <div>
-      <h1>Styling in React</h1>
-      <ul>
-        <li>inline style </li>
-        <li>Dynamic style </li>
-        <li>using CSS </li>
-      </ul>
-      <InlineStyle/>
-      {/* ExternalFile  */}
-      <ExternalStyle/>
+    <div className="container flex">
+      <div className="center flex">
+        <p className="paragraph">External Style</p>
+      </div>
     </div>
-  );
-};
-
-export default App;
+  )
+}
