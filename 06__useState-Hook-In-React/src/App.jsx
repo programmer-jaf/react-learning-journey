@@ -14,6 +14,7 @@
 
 import { Lists } from "./components/List"
 import { UseState } from "./hooks/UseState"
+import { DynamicValue } from "./solutions/DynamicValue"
 
 
 export const App = () =>{
@@ -24,6 +25,8 @@ export const App = () =>{
       <hr />
       {/* Listing in React */}
       <Lists/>
+      {/* Challenge -- 01 */}
+      <DynamicValue/>
     </div>
   )
 }
